@@ -10,15 +10,40 @@
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
+            display: flex;
         }
         header {
             background-color: #333;
             color: #fff;
             padding: 1rem 0;
             text-align: center;
+            width: 100%;
+        }
+        nav {
+            width: 200px;
+            background-color: #333;
+            color: #fff;
+            padding: 1rem;
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            left: 0;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            margin: 1rem 0;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
         }
         main {
+            margin-left: 220px;
             padding: 2rem;
+            flex: 1;
         }
         article {
             background-color: #fff;
@@ -41,10 +66,19 @@
             position: fixed;
             width: 100%;
             bottom: 0;
+            left: 0;
         }
     </style>
 </head>
 <body>
+    <nav>
+        <h2>Menu</h2>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="posts/post1.html">Blog Post 1</a></li>
+            <li><a href="posts/post2.html">Blog Post 2</a></li>
+        </ul>
+    </nav>
     <header>
         <h1>Welcome to My Blog</h1>
     </header>
