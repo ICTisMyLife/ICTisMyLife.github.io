@@ -3,97 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ICTisMyLife/title>
+    <title>Modern Blog</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
-            display: flex;
-        }
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 1rem 0;
-            text-align: center;
-            width: 100%;
-        }
-        nav {
-            width: 200px;
-            background-color: #333;
-            color: #fff;
-            padding: 1rem;
-            height: 100vh;
-            position: fixed;
-            top: 0;
-            left: 0;
-        }
-        nav ul {
-            list-style: none;
-            padding: 0;
-        }
-        nav ul li {
-            margin: 1rem 0;
-        }
-        nav ul li a {
-            color: #fff;
-            text-decoration: none;
-        }
-        main {
-            margin-left: 220px;
-            padding: 2rem;
-            flex: 1;
-        }
-        article {
-            background-color: #fff;
-            margin-bottom: 2rem;
-            padding: 1rem;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        h2 {
             color: #333;
         }
-        p {
-            line-height: 1.6;
+        header {
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 1rem 0;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        header nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+        header nav ul li {
+            margin: 0 1rem;
+        }
+        header nav ul li a {
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .hero {
+            margin-top: 80px; /* Adjust based on header height */
+            text-align: center;
+            padding: 2rem;
+            background-color: #e9ecef;
+        }
+        .hero img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .content {
+            padding: 2rem;
+            text-align: center;
         }
         footer {
-            background-color: #333;
-            color: #fff;
+            background-color: #fff;
+            box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
             text-align: center;
             padding: 1rem 0;
             position: fixed;
             width: 100%;
             bottom: 0;
-            left: 0;
         }
     </style>
 </head>
 <body>
-    <nav>
-        <h2>Menu</h2>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="posts/post1.html">Blog Post 1</a></li>
-            <li><a href="posts/post2.html">Blog Post 2</a></li>
-        </ul>
-    </nav>
     <header>
-        <h1>Welcome to ICTisMyLife Blog</h1>
+        <nav>
+            <ul>
+                <li><a href="https://www.example.com">Home</a></li>
+                <li><a href="https://www.example.com/about">About</a></li>
+                <li><a href="https://www.example.com/blog">Blog</a></li>
+                <li><a href="https://www.example.com/contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
-    <main>
-        <article>
-            <h2><a href="posts/post1.html">First Blog Post</a></h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-        </article>
-        <article>
-            <h2><a href="posts/post2.html">Another Blog Post</a></h2>
-            <p>Curabitur sit amet eros nec urna fermentum tincidunt...</p>
-        </article>
-    </main>
+    <div class="hero">
+        <img src="path/to/your/image.jpg" alt="Big Picture">
+    </div>
+    <div class="content">
+        <h1>Welcome to My Modern Blog</h1>
+        <p>This is a simple modern blog page with a top menu and a big picture section.</p>
+    </div>
     <footer>
-        <p>&copy; 2025 My Simple Blog</p>
+        <p>&copy; 2025 Modern Blog</p>
     </footer>
 </body>
 </html>
